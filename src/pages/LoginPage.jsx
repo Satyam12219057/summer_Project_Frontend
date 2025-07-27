@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import {useState} from 'react'
 import assets from '../assets/assets'
 import { AuthContext } from '../../context/AuthContext';
+import logo_bio from '../assets/logo_icon.svg'
 
 const LoginPage = () => {
   const [currentState,setCurrentState]=useState("Sign up");
@@ -30,7 +31,7 @@ const LoginPage = () => {
      gap-8 sm:justify-evenly max-sm:flex-col backdrop-blur-2xl'>
 
       {/* -----------left--------- */}
-      <img src={assets.logo_bio} alt="" className='w-[min(30vw,250px)]' />
+      <img src={logo_bio} alt="logo" className='w-[min(30vw,250px)]' />
 
       {/* -----------right-------------- */}
       <form onSubmit={onSubmitHandler} className='border-2 bg-white/10 text-white border-gray-500 p-6 flex
